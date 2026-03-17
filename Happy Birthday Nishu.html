@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Happy Birthday Nishu❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+margin:0;
+font-family:'Poppins',sans-serif;
+background:linear-gradient(135deg,#0f172a,#1e293b);
+color:#f8fafc;
+overflow-x:hidden;
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+text-align:center;
+}
+
+.screen{
+display:none;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+width:100%;
+min-height:100vh;
+padding:20px;
+}
+
+.screen.active{
+display:flex;
+}
+
+/* headings */
+h1{
+font-family:'Playfair Display',serif;
+font-size:36px;
+color:#ff4d6d;
+margin-bottom:10px;
+}
+
+h3{
+font-weight:300;
+max-width:700px;
+line-height:1.6;
+}
+
+/* button */
+button{
+padding:12px 28px;
+border-radius:30px;
+border:none;
+background:#ff4d6d;
+color:white;
+cursor:pointer;
+transition:0.3s;
+margin-top:20px;
+}
+
+button:hover{
+box-shadow:0 0 20px #ff4d6d;
+transform:scale(1.05);
+}
+
+/* images */
+img{
+max-width:90%;
+height:auto;
+border-radius:15px;
+margin:15px 0;
+}
+
+/* stars */
+.stars{
+position:fixed;
+width:100%;
+height:100%;
+background:url("https://i.imgur.com/YKY28eT.png");
+z-index:-1;
+animation:move 150s linear infinite;
+}
+
+@keyframes move{
+from{background-position:0 0;}
+to{background-position:10000px 5000px;}
+}
+
+/* moon */
+.moon{
+width:100px;
+height:100px;
+background:white;
+border-radius:50%;
+box-shadow:0 0 50px white;
+cursor:pointer;
+margin:20px;
+}
+
+/* shooting stars */
+.star{
+position:fixed;
+width:3px;
+height:3px;
+background:white;
+animation:shoot 1s linear;
+}
+
+@keyframes shoot{
+to{transform:translate(-600px,400px);}
+}
+
+/* timeline */
+.timeline{
+text-align:left;
+max-width:600px;
+border-left:2px solid #fda4af;
+padding-left:20px;
+}
+
+.timeline div{
+margin:25px 0;
+cursor:pointer;
+}
+
+.timeline div:hover{
+color:#fda4af;
+}
+
+/* gallery */
+.gallery{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.polaroid{
+background:white;
+color:black;
+padding:10px;
+width:180px;
+border-radius:6px;
+transform:rotate(-2deg);
+}
+
+.polaroid img{
+width:100%;
+}
+
+/* heart collage */
+.heart-collage{
+display:grid;
+grid-template-columns:repeat(6,70px);
+grid-template-rows:repeat(5,70px);
+gap:8px;
+justify-content:center;
+}
+
+.heart-collage img{
+width:100%;
+height:100%;
+object-fit:cover;
+border-radius:12px;
+transition:0.3s;
+}
+
+.heart-collage img:hover{
+transform:scale(1.15);
+z-index:2;
+}
+
+/* heart shape */
+.heart-collage img:nth-child(1){grid-column:2;grid-row:1;}
+.heart-collage img:nth-child(2){grid-column:3;grid-row:1;}
+.heart-collage img:nth-child(3){grid-column:5;grid-row:1;}
+.heart-collage img:nth-child(4){grid-column:6;grid-row:1;}
+
+.heart-collage img:nth-child(5){grid-column:1;grid-row:2;}
+.heart-collage img:nth-child(6){grid-column:2;grid-row:2;}
+.heart-collage img:nth-child(7){grid-column:3;grid-row:2;}
+.heart-collage img:nth-child(8){grid-column:4;grid-row:2;}
+
+.heart-collage img:nth-child(9){grid-column:2;grid-row:3;}
+.heart-collage img:nth-child(10){grid-column:3;grid-row:3;}
+.heart-collage img:nth-child(11){grid-column:4;grid-row:3;}
+
+.heart-collage img:nth-child(12){grid-column:3;grid-row:4;}
+
+/* letter */
+.letter{
+display:none;
+background:white;
+color:#ff4d6d;
+padding:30px;
+border-radius:12px;
+max-width:600px;
+line-height:1.7;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="stars"></div>
+
+<!-- SCREEN 1 -->
+<div class="screen active" id="s1">
+<h1>Happy Birthday Nishu ❤️</h1>
+
+<img src="https://drive.google.com/uc?export=view&id=118F4yIEVKsGVCdA6KE_KddaBp0IpDEjK" width="200">
+
+<h3 class="love-text">
+
+From the moment you came into my life, everything started feeling more <span class="highlight">beautiful 🌸</span><br><br>
+
+Your <span class="highlight">smile 😊</span> is my peace,  
+your <span class="highlight">voice 🎶</span> is my favorite sound,  
+and your <span class="highlight">love 💖</span> is my biggest strength.<br><br>
+
+On your special day, I just want to say I’m <b>so lucky to have you 🥺❤️</b><br>
+
+I promise to <span class="highlight">love you more</span> with every passing day 💞
+
+</h3>
+
+<button onclick="next(2)">Start Our Story</button>
+</div>
+
+<!-- SCREEN 2 -->
+<div class="screen" id="s2">
+  <h1>Close your eyes… make a wish 🌙</h1>
+  
+  <p>Click the moon 🌙… and watch my love fall for you like a shooting star ✨❤️</p>
+  
+  <!-- Moon -->
+  <div class="moon" onclick="showLove()"></div>
+
+  <!-- Hidden Love Message -->
+  <h2 id="starMessage" style="display: none; color: white;">
+    I love you Nishi ❤️✨
+  </h2>
+
+  <button onclick="next(3)">Continue</button>
+</div>
+
+<script>
+function showLove() {
+  document.getElementById("starMessage").style.display = "block";
+}
+</script>
+
+<!-- SCREEN 3 -->
+<div class="screen" id="s3">
+  <h1>Our Story 💕</h1>
+
+  <div class="timeline">
+    
+    <div onclick="showMsg('I still remember how it all began… New Year passed, college restarted, and we barely knew each other… but something quietly started to change 💫')">
+      When It All Began ✨
+    </div>
+
+    <div onclick="showMsg('March 1st — The Baker’s Dozen interview… the first time I saw you. I was shy, but I kept noticing you everywhere ❤️')">
+      The First Glimpse of You ❤️
+    </div>
+
+    <div onclick="showMsg('March 2nd I texted you… March 4th we both got selected. It felt like the universe had already planned something for us ✨')">
+      When Destiny Stepped In 💫
+    </div>
+
+    <div onclick="showMsg('Before you, my life had no balance… and then you came — calm, patient, caring. You didn’t change me, you made me better 🤍')">
+      You Made Me Better 🤍
+    </div>
+
+    <div onclick="showMsg('May 14–15… our internship began. From that first “You haven’t gone up yet?” to endless talks and laughter — those became my favorite memories 💛')">
+      The Days We Got Closer 💛
+    </div>
+
+    <div onclick="showMsg('July 12… I realized I didn’t want to lose you. I wanted you in my life, always ❤️')">
+      When I Knew It Was You ❤️
+    </div>
+
+    <div onclick="showMsg('September 11 🌙… something clicked. That was the day we began — and since then, you’ve been my favorite part of every day 💞')">
+     The Start of Us 💞
+    </div>
+
+    <div onclick="showMsg('We’ve had ups and downs… but we talk, understand, forgive, and grow together. That’s what makes us special 🤝💖')">
+     Growing Together 🤝💖
+    </div>
+
+    <div onclick="showMsg('Nishi… you are the most beautiful and pure soul I’ve ever known. Caring, loving, and truly special 🤍✨')">
+     The Beautiful Soul You Are ✨
+    </div>
+
+    <div onclick="showMsg('I feel so lucky to have you. I promise to keep growing for you… because I see you as my forever ♾️❤️')">
+      My Forever With You ♾️❤️
+    </div>
+
+  </div>
+
+  <!-- Message Display -->
+  <p id="storyMessage" style="margin-top:20px; font-size:18px;"></p>
+
+  <button onclick="next(4)">Next</button>
+</div>
+
+<script>
+function showMsg(text) {
+  document.getElementById("storyMessage").innerText = text;
+}
+</script>
+
+<!-- SCREEN 4 -->
+<div class="screen" id="s4">
+  <h1>Moments I’ll Never Forget With You ❤️✨</h1>
+
+  <div class="gallery">
+    <div class="polaroid">
+      <img src="C:/Users/kruta/OneDrive/Desktop/Final NK/1.1.jpg.jpeg">
+      <p>The smile that stole my heart 😊❤️</p>
+    </div>
+
+    <div class="polaroid">
+      <img src="C:/Users/kruta/OneDrive/Desktop/Final NK/photo2.jpg.jpeg">
+      <p>One of my happiest moments with you 💞</p>
+    </div>
+
+    <div class="polaroid">
+      <img src="C:/Users/kruta/OneDrive/Desktop/Final NK/photo3.jpg.jpeg">
+      <p>Just us… and that’s everything ❤️✨</p>
+    </div>
+  </div>
+
+  <button onclick="next(5)">Next</button>
+</div>
+
+<!-- SCREEN 5 -->
+<div class="screen" id="s5">
+  <h1>Heart of Memories ❤️</h1>
+
+  <div class="gallery">
+
+    <div class="photo-box">
+      <img src="C:/Users/kruta/OneDrive/Desktop/Final NK/Photos/1.jpeg">
+      <p>The moment that made me smile the most 😊❤️</p>
+    </div>
+
+    <div class="photo-box">
+      <img src="C:/Users/kruta/OneDrive/Desktop/Final NK/Photos/2.jpeg">
+      <p>Just you… being perfect as always 💖</p>
+    </div>
+
+    <div class="photo-box">
+      <img src="C:/Users/kruta/OneDrive/Desktop/Final NK/Photos/3.jpeg">
+      <p>One picture, a thousand emotions 💞</p>
+    </div>
+
+    <div class="photo-box">
+      <img src="C:/Users/kruta/OneDrive/Desktop/Final NK/Photos/4.jpeg">
+      <p>This day will always stay in my heart ❤️</p>
+    </div>
+
+    <div class="photo-box">
+      <img src="C:/Users/kruta/OneDrive/Desktop/Final NK/Photos/5.jpeg">
+      <p>Your smile = my happiness 😊✨</p>
+    </div>
+
+    <div class="photo-box">
+      <img src="C:/Users/kruta/OneDrive/Desktop/Final NK/Photos/6.jpeg">
+      <p>Falling for you… again and again 💘</p>
+    </div>
+
+    <div class="photo-box">
+      <img src="C:/Users/kruta/OneDrive/Desktop/Final NK/Photos/7.jpeg">
+      <p>Every moment with you feels special 💕</p>
+    </div>
+
+    <div class="photo-box">
+      <img src="C:/Users/kruta/OneDrive/Desktop/Final NK/Photos/8.jpeg">
+      <p>Just us… and nothing else matters ❤️</p>
+    </div>
+
+    <div class="photo-box">
+      <img src="C:/Users/kruta/OneDrive/Desktop/Final NK/Photos/9.jpeg">
+      <p>Memories I never want to forget 💫</p>
+    </div>
+
+    <div class="photo-box">
+      <img src="C:/Users/kruta/OneDrive/Desktop/Final NK/Photos/10.jpeg">
+      <p>You make my world brighter 🌍✨</p>
+    </div>
+
+    <div class="photo-box">
+      <img src="C:/Users/kruta/OneDrive/Desktop/Final NK/Photos/11.jpeg">
+      <p>My favorite person, always 💖</p>
+    </div>
+
+    <div class="photo-box">
+      <img src="C:/Users/kruta/OneDrive/Desktop/Final NK/Photos/12.jpeg">
+      <p>Forever looks beautiful with you ♾️❤️</p>
+    </div>
+
+  </div>
+
+  <button onclick="next(6)">Next</button>
+</div>
+
+<!-- SCREEN 6 -->
+<div class="screen" id="s6">
+  <h1>My Letter 💌</h1>
+
+  <button onclick="openLetter()">Open</button>
+
+  <div class="letter" id="letter">
+    Happy Birthday, My Love ❤️🎂  <br><br>
+
+    Nishi❤️,  <br><br>
+
+    I don’t think you even realize how much you mean to me…  
+    but today, I want you to feel it in every word 💖  <br><br>
+
+    You came into my life so quietly, so normally…  
+    and somehow, you became everything 🌙  <br><br>
+
+    From those small moments in college…  
+    to random conversations…  
+    to memories that now mean the world to me 
+    you turned ordinary days into something I never want to forget ✨  <br><br>
+
+    You didn’t just change my life…  
+    you changed <b>me</b>.  <br><br>
+
+    You made me calmer, stronger, and better.  
+    You taught me how to love with patience, how to understand without judging,  
+    and how to care without expecting anything in return 🤍  <br><br>
+
+    And the most beautiful part?  
+    You did all of this just by being <b>you</b> 💕  <br><br>
+
+    There were days we laughed endlessly,  
+    and days that tested us…  
+    but even in those moments, I never once stopped choosing you ❤️  <br><br>
+
+    Because loving you isn’t a phase…  
+    it’s something my heart decided, and never looked back 🥺  <br><br>
+
+    You are my peace in chaos,  
+    my comfort in silence,  
+    and my happiness in the simplest moments 💞  <br><br>
+
+    And if there’s one thing I want you to always remember…  
+    it’s this  <br><br>
+
+    <b>No matter what happens,  
+    no matter where life takes us…  
+    I will always choose you. Again and again. ❤️</b>  <br><br>
+
+    I don’t just love you for today…  
+    I love you for every tomorrow I want to spend with you ♾️✨  <br><br>
+
+    Happy Birthday,Radhey❤️<br>
+    You are, and always will be, my most beautiful feeling 💖  
+  </div>
+
+  <button onclick="next(7)">Final Surprise</button>
+</div>
+
+<style>
+.letter {
+  display: none;
+  margin-top: 20px;
+  padding: 20px;
+  background: #fff;
+  color: #000;
+  border-radius: 10px;
+  line-height: 1.6;
+}
+</style>
+
+<script>
+function openLetter() {
+  document.getElementById("letter").style.display = "block";
+}
+</script>
+
+<!-- SCREEN 7 -->
+<div class="screen" id="s7">
+  <h1>For You ❤️</h1>
+
+  <div class="proposal-letter">
+    Nishi, ❤️ <br><br>
+
+    I’ve thought a lot about what I should say to you today…  
+    but the truth is, some feelings can never be perfectly put into words. <br><br>
+
+    Still, I want to try because you deserve to know how much you mean to me 💖 <br><br>
+
+    What we share isn’t just love…  
+    it’s understanding, patience, trust, and all the little moments that brought us closer day by day ✨ <br><br>
+
+    You’ve seen me at my best and at my worst…  
+    and yet, you stayed, you understood, and you helped me grow 🤍 <br><br>
+
+    And somewhere along this journey, I realized something very important
+    you are not just a part of my life…  
+    you are someone I can’t imagine my life without ❤️ <br><br>
+
+    You bring calm to my chaos,  
+    clarity to my confusion,  
+    and happiness into even my simplest days 💞 <br><br>
+
+    What makes us special is not that everything is perfect…  
+    but that we choose each other, even when things aren’t easy 🤝 <br><br>
+
+    And that’s what makes me believe in us… in something real, something lasting ♾️ <br><br>
+
+    I don’t want something temporary with you.  
+    I want to grow with you, stand beside you, support you,  
+    and build a life together step by step, with patience and love 💫 <br><br>
+
+    So today, with all my heart… I want to ask you something <br><br>
+
+    <b>
+    Will you stay with me,  
+    grow with me,  
+    and let us build our forever together? 💍❤️
+    </b> <br><br>
+
+    — Yours, Raman always 💖
+  </div>
+
+  <!-- Buttons -->
+  <div class="proposal-buttons" id="btnContainer">
+    <button onclick="yesClicked()">Yes ❤️</button>
+    <button id="noBtn" onmouseenter="moveButton()" onclick="moveButton()">No 😝</button>
+  </div>
+
+  <p id="responseMsg"></p>
+</div>
+
+<style>
+.proposal-buttons {
+  margin-top: 20px;
+  position: relative;
+  height: 120px;
+}
+
+.proposal-buttons button {
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  position: absolute;
+}
+
+/* Yes button position */
+.proposal-buttons button:first-child {
+  background-color: #ff4d6d;
+  color: white;
+  left: 20%;
+}
+
+/* No button */
+#noBtn {
+  background-color: #ccc;
+  left: 60%;
+  transition: all 0.3s ease;
+}
+
+#responseMsg {
+  margin-top: 20px;
+  font-size: 18px;
+}
+</style>
+
+<script>
+function yesClicked() {
+  document.getElementById("responseMsg").innerText =
+    "You just made me the happiest person alive ❤️🥺";
+}
+
+function moveButton() {
+  const btn = document.getElementById("noBtn");
+  const container = document.getElementById("btnContainer");
+
+  const maxX = container.clientWidth - btn.offsetWidth;
+  const maxY = container.clientHeight - btn.offsetHeight;
+
+  const randomX = Math.random() * maxX;
+  const randomY = Math.random() * maxY;
+
+  btn.style.left = randomX + "px";
+  btn.style.top = randomY + "px";
+}
+</script>
+  <!-- Response -->
+  <p id="responseMsg"></p>
+</div>
+
+<style>
+.proposal-letter {
+  margin-top: 20px;
+  padding: 20px;
+  background: #fff;
+  color: #000;
+  border-radius: 10px;
+  line-height: 1.6;
+}
+
+.proposal-buttons {
+  margin-top: 20px;
+  position: relative;
+  height: 100px;
+}
+
+.proposal-buttons button {
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  position: absolute;
+}
+
+.proposal-buttons button:first-child {
+  background-color: #ff4d6d;
+  color: white;
+  left: 20%;
+}
+
+#noBtn {
+  background-color: #ccc;
+  left: 60%;
+}
+
+#responseMsg {
+  margin-top: 20px;
+  font-size: 18px;
+}
+</style>
+
+<script>
+function yesClicked() {
+  document.getElementById("responseMsg").innerText = "You just made me the happiest person alive ❤️🥺";
+}
+
+function moveButton() {
+  const btn = document.getElementById("noBtn");
+  const container = document.getElementById("btnContainer");
+
+  const maxX = container.clientWidth - btn.offsetWidth;
+  const maxY = container.clientHeight - btn.offsetHeight;
+
+  const randomX = Math.random() * maxX;
+  const randomY = Math.random() * maxY;
+
+  btn.style.left = randomX + "px";
+  btn.style.top = randomY + "px";
+}
+</script>
+<script>
+
+function next(n){
+document.querySelectorAll(".screen").forEach(s=>s.classList.remove("active"));
+document.getElementById("s"+n).classList.add("active");
+}
+
+function shootStar(){
+for(let i=0;i<5;i++){
+let s=document.createElement("div");
+s.className="star";
+s.style.top=Math.random()*300+"px";
+s.style.left=Math.random()*100+"%";
+document.body.appendChild(s);
+setTimeout(()=>s.remove(),1000);
+}
+}
+
+function showMsg(msg){
+alert(msg);
+}
+
+function openLetter(){
+document.getElementById("letter").style.display="block";
+}
+
+</script>
+
+</body>
+</html>
